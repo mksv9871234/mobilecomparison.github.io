@@ -395,7 +395,7 @@ body {
   list-style-type: none;
   margin: 5px auto;
   padding: 7px;
-  width: 120%;
+  width: 100%;
   flex-wrap: wrap; 
 }
 #PhoneFeatures li img{
