@@ -219,6 +219,7 @@ function compareMobiles() {
             // Add more mobile phones as needed
         ];
 
+  
         function generateMobilePhoneHTML(phone) {
             return `
             <div class="mobilecontainer">
@@ -232,19 +233,19 @@ function compareMobiles() {
             </div>
             </div>
             <div style="box-shadow: 0 0 6px black;">
-            <div class="d-flex">
-                <div class="d-block text-center" id="PhoneImgMobileList">
+            <div class="d-flex row">
+                <div class="col-md-6 d-block text-center" id="PhoneImgMobileList">
                     <img src="${phone.imageSrc}" class="img-fluid"/>
                     <p><a class="text-decoration-none" href="#">view Photos (${phone.photoCount})</a></p>
                 </div>
-                <div  style="margin: auto 0" class="d-flex justify-content-between align-items-center flex-column">
+                <div  style="margin: auto 0" class="col-md-6 d-flex justify-content-between align-items-center flex-column">
                     <ul id="PhoneFeatures" >
-                        <li><span><img src="img/icons/processor.png">Processor</span><span>${phone.processor}</span> </li>
-                        <li><span><img src="img/icons/ram.png">RAM</span><span>${phone.ram}</span></li>
-                        <li><span><img src="img/icons/camera.png">Rear Camera</span><span>${phone.rearCamera}</span> </li>
-                        <li><span><img src="img/icons/camera.png">Front Camera</span><span>${phone.frontCamera}</span></li>
-                        <li><span><img src="img/icons/battery.png">Battery</span><span>${phone.battery}</span></li>
-                        <li><span><img src="img/icons/wifi-connection.png">Display</span><span>${phone.display}</span> </li>
+                        <li><span><img src="img/icons/processor.png"></span><span>${phone.processor}</span> </li>
+                        <li><span><img src="img/icons/ram.png"></span><span>${phone.ram}</span></li>
+                        <li><span><img src="img/icons/camera.png"></span><span>${phone.rearCamera}</span> </li>
+                        <li><span><img src="img/icons/camera.png"></span><span>${phone.frontCamera}</span></li>
+                        <li><span><img src="img/icons/battery.png"></span><span>${phone.battery}</span></li>
+                        <li><span><img src="img/icons/wifi-connection.png"></span><span>${phone.display}</span> </li>
                     </ul>
                     <p><a class="text-decoration-none" href="#">View All Specs</a></p>
                 </div>
