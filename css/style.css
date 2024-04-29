@@ -1,0 +1,418 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+  }
+  .sidenav img{
+    width: 100px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: flex;
+    transition: 0.3s;
+    background-size: 40px 40px;
+  
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .navbar p{font-size: 30px;}
+  }
+
+  .navbar p{
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+  }
+  .navbar span{
+    margin-left: 10px;
+  }
+  #searchbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #searchbar input{
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  #searchbar input:focus{
+    outline: none;
+  }
+
+  .brand-showcase {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+  }
+  .brand-showcase::-webkit-scrollbar {
+    display: none;
+  }
+  .brand {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .brandFeatures{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  .brandFeatures:hover{
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .brandFeatures img{
+    max-width: 50%;
+    max-height: 40%;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+
+  }
+
+.brandFeatures p {
+    margin-top: 10px;
+    word-wrap: break-word;
+
+}
+
+  
+  .brand:hover{
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .brand img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
+
+
+
+
+  .brand-showcaseCotaniner {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    padding: 20px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  }
+
+  .brand-showcase2 {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    width: fit-content;
+  }
+
+  .brand1 {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .brand1:hover{
+    border:1px solid black;
+    cursor: pointer;
+
+  }
+  .brand1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  .brand-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+  }
+  .spec-score {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .mobile-details {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #000;
+  }
+  .mobile-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .mobile-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  .view-all-btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /*  price range mobile */
+  #underBuggetPhone{
+    width:200px;
+    height: 80px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 20px;
+    color: white;
+  }
+  #underBuggetPhone:hover{
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .phonePriceRange{
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  }
+
+
+  /* compare mobiles css*/
+.mobileComparison{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.mobileComparison input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.mobileComparison button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mobileComparison button:hover {
+    background-color: #0056b3;
+}
+
+.mobileComparison #comparisonResult {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.vs {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.mobile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mobile {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.mobile-header {
+  text-align: center;
+}
+
+.mobile-features {
+  padding: 0 20px;
+}
+
+.feature {
+  margin-bottom: 10px;
+}
+
+.feature span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .mobile-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .mobile {
+      width: 80%;
+  }
+}
+
+/* footer */
+.footersection header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.footersection{
+  background-color: #000;
+  color: white;
+}
+
+ .footersection .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#usefulLinks li , #connectWithUs li{
+  list-style-type: none;
+}
+#connectWithUs li a, #usefulLinks li a{
+  text-decoration: none;
+  color: white;
+}
+#connectWithUs a:hover, #usefulLinks a:hover,#newMobilePhones a:hover{
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+#newMobilePhones a{
+  cursor: pointer;
+  display: block;
+  margin: 4px;
+}
+
+.footersection section {
+  padding: 20px 0;
+}
+
+.footersection h3 {
+  margin-top: 0;
+}
+
+.footersection .footer-logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+/* eanch mobileList use Mobile box */
+
+.MobileList{
+  width: 100%;
+  box-shadow: 0 0 2px black;
+  padding: 10px;
+}
+.MobileList #mobileTop{
+  display: flex;
+  justify-content: space-between;
+}
+#PhoneImgMobileList img{
+  width: 400px;
+}
+@media (max-width:576px){
+  #PhoneFeatures{
+    width: min-content;
+  }
+}
+#PhoneFeatures li{
+  list-style-type: none;
+  margin: 5px auto;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  width: 120%;
+  flex-wrap: wrap; 
+}
+#PhoneFeatures li img{
+  width: 20px;
+  margin-right: 4px;
+}
+@media (max-width: 576px) {
+  .mobileContainer {
+      margin-top: 10px;
+  }
+}
+.mobileContainer {
+  margin-top: 20px;
+  overflow: hidden; 
+}
+
+

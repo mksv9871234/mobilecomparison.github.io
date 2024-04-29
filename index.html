@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="icon" href="img/M.jpeg" type="image/x-icon">
+    <script src="js/javascript.js"></script>
+    <script src="js/js/bootstrap.bundle.min.js"></script>
+    <title>MKSV</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="img/LOGO.png"> 
+        <hr class="text-light">
+        <a href="index.html">Home</a>
+        <a href="AllMobiles.html">All Mobiles</a>
+        <a href="#">Compare Mobiles</a>
+        <a href="Upcoming.html">Upcoming Mobiles</a>
+        <a href="#">Latest Mobiles</a>
+        <a href="#">Best Mobiles</a>
+        <a href="#">Phone Finder</a>
+        <a href="#">Trending Phones</a>
+        <a href="#">Search by Brand</a>
+        <a href="#">Mobiles by Features</a>
+        <a href="#">Mobile Price List</a>
+      </div>
+      <div class="bg-dark pb-2">
+      <div class="navbar">
+      <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+        <p>mksv</p>
+      </div>
+      <div id="searchbar">
+        <input type="text" placeholder="Search for mobiles or brands"/>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-between m-3">
+        <h3>Featured Mobile Brands</h3>
+        <button class="view-all-btn">VIEW ALL</button>
+        </div>
+        <div class="brand-showcase">
+            <div class="brand"><img src="img/MobileBrands/samsung.png" alt="Brand 1"></div>
+            <div class="brand"><img src="img/MobileBrands/Nokia-Logo-1978-presente.png" alt="Brand 2"></div>
+            <div class="brand"><img src="img/MobileBrands/realme-logo.png" alt="Brand 3"></div>
+            <div class="brand"><img src="img/MobileBrands/OIP.jpeg" alt="Brand 1"></div>
+            <div class="brand"><img src="img/MobileBrands/apple-logo.png" alt="Brand 2"></div>
+            <div class="brand"><img src="img/MobileBrands/oppo.png" alt="Brand 3"></div>
+            <div class="brand"><img src="img/MobileBrands/vivo.png" alt="Brand 1"></div>
+            <div class="brand"><img src="img/MobileBrands/xiaomi.png" alt="Brand 2"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-between m-3">
+            <h3>Upcoming Mobiles</h3>
+            <button class="view-all-btn">VIEW ALL</button>
+        </div>
+        <div class="brand-showcaseCotaniner" id="brandShowcaseContainer">
+            <!-- Brand showcase will be dynamically generated here -->
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="d-flex justify-content-between m-3">
+            <h3>Letest & Popular Mobiles</h3>
+            <button class="view-all-btn">VIEW ALL</button>
+        </div>
+        <div class="brand-showcaseCotaniner" id="brandShowcaseContainer2">
+            <!-- Brand showcase will be dynamically generated here -->
+        </div>
+    </div>
+
+    <!-- phone by price range -->
+    <div class="container">
+        <h3>Phones by Price Ranges</h3>
+        <div class=" d-flex phonePriceRange">
+           <div class="low-bugget bg-success" id="underBuggetPhone">
+                <strong>Best Phone Under</strong>
+                <h4>Rs 5,000</h4>
+           </div>
+            <div class="mid-bugget bg-primary" id="underBuggetPhone">
+                <strong>Best Phone Under</strong>
+                <h4>Rs 10,000</h4>
+            </div>
+            <div class="hig-bugget bg-danger" id="underBuggetPhone">
+                <strong>Best Phone Under</strong>
+                <h4>Rs 20,000</h4>
+            </div>
+            <div class="hig-bugget bg-warning" id="underBuggetPhone">
+                <strong>Best Phone Under</strong>
+                <h4>Rs 30,000</h4>
+            </div>
+            <div class="hig-bugget bg-info" id="underBuggetPhone">
+                <strong>Best Phone Under</strong>
+                <h4>Rs 40,000</h4>
+            </div>
+            <div class="hig-bugget bg-secondary" id="underBuggetPhone">
+                <strong>Best Phone Under</strong>
+                <h4>Rs 50,000</h4>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mb-3 text-center">Mobile Comparison</h2>
+    <div class="mobileComparison">
+    <input type="text" id="mobile1" name="mobile1" placeholder="Search Mobile to add" required>
+    <input type="text" id="mobile2" name="mobile2" placeholder="Search Mobile to add" required>
+    <button onclick="compareMobiles()">Compare</button>
+    <div id="comparisonResult"></div>
+    </div>
+
+    <div class="container">
+        <div class="mobile-container" id="mobileContainer">
+            <!-- Mobile A -->
+            <div class="mobile" id="mobileA">
+                <div class="mobile-header">
+                    <h2>Mobile A</h2>
+                    <img src="" alt="Mobile A Image" id="mobileImageA">
+                </div>
+                <div class="mobile-features" id="mobileFeaturesA">
+                    <!-- Features will be dynamically added here -->
+                </div>
+            </div>
+            <!-- VS Label -->
+            <div class="vs">VS</div>
+            <!-- Mobile B -->
+            <div class="mobile" id="mobileB">
+                <div class="mobile-header">
+                    <h2>Mobile B</h2>
+                    <img src="" alt="Mobile B Image" id="mobileImageB">
+                </div>
+                <div class="mobile-features" id="mobileFeaturesB">
+                    <!-- Features will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+        <!-- Comparison -->
+    </div>
+    <div id="comparisonContainer"></div>
+
+     <!-- footer -->
+     <div class="footersection">
+        <section id="usefulLinks">
+            <div class="container">
+                <h3>Useful Links</h3>
+                <!-- Add your useful links here -->
+                <ul>
+                    <li><a href="#">COMPARE</a></li>
+                    <li><a href="#">ALL PHONES</a></li>
+                    <li><a href="#">TOP 10</a></li>
+                    <li><a href="#">LETEST MOBILES</a></li>
+                    <li><a href="#">LETEST NEWS</a></li>
+                </ul>
+            </div>
+        </section>
+    
+        <section id="newMobilePhones">
+            <div class="container">
+                <h3>New Mobile Phones</h3>
+                <div class="d-flex text-light justify-content-around">
+                <div>
+                    <a>realme C65 6GB RAM</a>
+                    <a>vivo Y186</a>
+                    <a>realme Narzo 70 8GB RAM</a>
+                    <a>OPPO A60 4G</a>
+                    <a>Samsung Galaxy C55</a>
+                </div>
+               <div>
+                <a>realme C65 6GB RAM</a>
+                <a>vivo Y186</a>
+                <a>realme Narzo 70 8GB RAM</a>
+                <a>OPPO A60 4G</a>
+                <a>Samsung Galaxy C55</a>
+               </div>
+               <div>
+                <a>realme C65 6GB RAM</a>
+                <a>vivo Y186</a>
+                <a>realme Narzo 70 8GB RAM</a>
+                <a>OPPO A60 4G</a>
+                <a>Samsung Galaxy C55</a>
+               </div>
+               
+            </div>
+            </div>
+        </section>
+    
+        <section id="connectWithUs">
+            <div class="container">
+                <h3>Connect With Us</h3>
+                <!-- Add your social media links here -->
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+                <!-- Add your footer logo here -->
+                <img src="img/LOGO.png" alt="Footer Logo" class="footer-logo">
+                <p>&copy; 2024 Website mksv. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+</html>

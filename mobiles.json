@@ -1,0 +1,25 @@
+[
+    {
+        "img": "iphone12.png",
+        "name": "iPhone 12",
+        "brand": "Apple",
+        "ram": "4 GB",
+        "storage": "64 GB"
+    },
+    {
+        "img": "galaxy-s21.png",
+        "name": "Galaxy S21",
+        "brand": "Samsung",
+        "ram": "8 GB",
+        "storage": "128 GB"
+    },
+    {
+        "img": "pixel5.png",
+        "name": "Pixel 5",
+        "brand": "Google",
+        "ram": "8 GB",
+        "storage": "128 GB"
+    }
+]
+
+  
